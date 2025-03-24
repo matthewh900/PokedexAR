@@ -1,7 +1,12 @@
 import { Home } from "@/screens/Home";
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 export default function Index() {
   return (
-    <Home />
+    <QueryClientProvider client={queryClient}>
+      <Home/>
+    </QueryClientProvider>
   )
 }

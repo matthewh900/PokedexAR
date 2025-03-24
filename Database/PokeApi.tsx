@@ -18,6 +18,6 @@ export function GetNext(next: string) {
 
 export function GetPokemonData({url}: props) {
     return axios.get(url).then((res) => {
-        return res
+        return res.data
     })
 }
