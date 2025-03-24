@@ -3,8 +3,21 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     IndexView: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        backgroundColor: '#fff',
+    },
+    container: {
+        padding: 8,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    image: {
+        width: 100,
+        height: 100,
+        marginRight: 32,
+    },
+    name: {
+        fontWeight: 'bold',
+        fontSize: 32,
     }
 })
 

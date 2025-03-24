@@ -38,7 +38,7 @@ export default function Index() {
       <FlatList
         data={pokemon}
         keyExtractor={(item) => item.name}
-        renderItem={({ item }) => <Text>{item.name}</Text>}
+        renderItem={({ item }) => <PokemonCard url={item.url}/>}
         onEndReached={loadMore}
         ListFooterComponent={() => isLoadingMore ? <ActivityIndicator/> : null}
       />
